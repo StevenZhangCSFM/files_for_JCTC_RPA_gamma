@@ -1,0 +1,146 @@
+***************************************************************************
+*                       SPARC (version Nov 06, 2024)                      *
+*   Copyright (c) 2020 Material Physics & Mechanics Group, Georgia Tech   *
+*           Distributed under GNU General Public License 3 (GPL)          *
+*                   Start time: Tue Feb 11 19:31:48 2025                  *
+***************************************************************************
+                           Input parameters                                
+***************************************************************************
+LATVEC_SCALE: 6.72885 6.72885 6.72885 
+LATVEC:
+1.000000000000000 0.000000000000000 0.000000000000000 
+0.000000000000000 1.000000000000000 0.000000000000000 
+0.000000000000000 0.000000000000000 1.000000000000000 
+FD_GRID: 68 68 68
+FD_ORDER: 12
+BC: P P P
+KPOINT_GRID: 1 1 1
+KPOINT_SHIFT: 0 0 0
+SPIN_TYP: 0
+ELEC_TEMP_TYPE: Fermi-Dirac
+SMEARING: 1e-06
+EXCHANGE_CORRELATION: GGA_PBE
+NSTATES: 20
+CHEB_DEGREE: 50
+CHEFSI_BOUND_FLAG: 0
+CALC_STRESS: 0
+CALC_PRES: 0
+MAXIT_SCF: 100
+MINIT_SCF: 2
+MAXIT_POISSON: 3000
+TOL_SCF: 1.00E-05
+POISSON_SOLVER: AAR
+TOL_POISSON: 1.00E-07
+TOL_LANCZOS: 1.00E-02
+TOL_PSEUDOCHARGE: 1.00E-08
+MIXING_VARIABLE: density
+MIXING_PRECOND: kerker
+TOL_PRECOND: 9.79E-06
+PRECOND_KERKER_KTF: 1
+PRECOND_KERKER_THRESH: 0.1
+MIXING_PARAMETER: 0.3
+MIXING_HISTORY: 7
+PULAY_FREQUENCY: 1
+PULAY_RESTART: 0
+REFERENCE_CUTOFF: 0.5
+RHO_TRIGGER: 4
+NUM_CHEFSI: 1
+FIX_RAND: 0
+VERBOSITY: 1
+PRINT_FORCES: 1
+PRINT_ATOMS: 1
+PRINT_EIGEN: 1
+PRINT_DENSITY: 1
+PRINT_ORBITAL: 2
+PRINT_ENERGY_DENSITY: 0
+OUTPUT_FILE: C8
+***************************************************************************
+                                Cell                                       
+***************************************************************************
+Lattice vectors (Bohr):
+6.728850000000000 0.000000000000000 0.000000000000000 
+0.000000000000000 6.728850000000000 0.000000000000000 
+0.000000000000000 0.000000000000000 6.728850000000000 
+Volume: 3.0466498319E+02 (Bohr^3)
+Density: 3.1537854791E-01 (amu/Bohr^3), 3.5340919746E+00 (g/cc)
+***************************************************************************
+                           Parallelization                                 
+***************************************************************************
+NP_SPIN_PARAL: 1
+NP_KPOINT_PARAL: 1
+NP_BAND_PARAL: 1
+NP_DOMAIN_PARAL: 1 1 1
+NP_DOMAIN_PHI_PARAL: 1 1 1
+EIG_SERIAL_MAXNS: 1500
+WARNING: Default parallelization not used. This could result in degradation of performance.
+***************************************************************************
+                             Initialization                                
+***************************************************************************
+Number of processors               :  240
+Mesh spacing                       :  0.0989537 (Bohr)
+Number of symmetry adapted k-points:  1
+Output printed to                  :  C8.out
+Final eigenvalues printed to       :  C8.eigen
+Total number of atom types         :  1
+Total number of atoms              :  8
+Total number of electrons          :  32
+Atom type 1  (valence electrons)   :  C 4
+Pseudopotential                    :  ../06_C_4_1.2_1.2_pbe_n_v1.0.psp8
+Atomic mass                        :  12.0106
+Pseudocharge radii of atom type 1  :  6.53 6.53 6.53 (x, y, z dir)
+Number of atoms of type 1          :  8
+Estimated total memory usage       :  258.61 MB
+Estimated memory per processor     :  1.08 MB
+***************************************************************************
+                            RPA Settings                                   
+***************************************************************************
+N_NUCHI_EIGS: 8320
+N_OMEGA: 8
+STERN_BLOCK_SIZE: 1 1 1 1 1 1 1 1 
+TOL_ERPA: 1.000E-06
+TOL_STERN_RES: 1.000E-03
+FLAG_PQ_OPERATOR: 0
+FLAG_COCGINITIAL: 1
+FLAG_PRECONDITION: 0 0 0 0 0 0 0 0 
+MAXIT_FILTERING: 25
+INPUT_DENS_FILE: UNDEFINED
+FLAG_CYCLIC_PERMUTE: 0
+SQ_FLAG_RPA: 1
+SQ_NPL_RPA: 7
+FLAG_PRINT_EIGS: 0
+***************************************************************************
+                         RPA Parallelization                               
+***************************************************************************
+NP_NUCHI_EIGS_PARAL_RPA: 240
+NP_SPIN_PARAL_RPA: 1
+NP_KPOINT_PARAL_RPA: 1
+NP_BAND_PARAL_RPA: 1
+NP_DIAG_SQ: 240
+***************************************************************************
+Estimated memory usage in RPA calculation is 1.30 GB
+***************************************************************************
+q-point 1 (reduced coords 0.000 0.000 0.000), weight 1.000
+ omega 1 (value 49.365, 0~1 value 0.020, weight 0.051)
+nIter|ErpaTerm(Ha/atom)|Timing (s)
+  1     -1.129E-04      586.69
+  2     -1.639E-03      584.35
+  3     -2.012E-03      537.72
+  4     -2.069E-03      499.57
+  5     -2.086E-03      479.69
+  6     -2.094E-03      471.45
+  7     -2.097E-03      472.77
+  8     -2.100E-03      470.04
+  9     -2.101E-03      472.40
+ 10     -2.102E-03      473.45
+ 11     -2.103E-03      473.79
+ 12     -2.103E-03      472.13
+ 13     -2.104E-03      473.34
+ 14     -2.104E-03      472.68
+ 15     -2.104E-03      472.95
+ 16     -2.104E-03      476.15
+ 17     -2.105E-03      475.75
+ 18     -2.105E-03      472.44
+***************************************************************************
+q-point 1 (reduced coords 0.000 0.000 0.000), weight 1.000
+ omega 2 (value 8.836, 0~1 value 0.102, weight 0.111)
+nIter|ErpaTerm(Ha/atom)|Timing (s)

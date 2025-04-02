@@ -1,0 +1,26 @@
+% clear;
+% load("Neig.mat");
+axes1 = axes('Position',[0.17 0.17 0.8 0.8]);
+hold(axes1,'on');
+semilogy1 = semilogy(Neig(1:7), abs(ErrSi8(1:7)), '-o','LineWidth',2.5,'MarkerSize',9);
+semilogy1.MarkerFaceColor = [0 0.4470 0.7410];
+semilogy2 = semilogy(Neig(1:7), abs(ErrC8(1:7)),'-pentagram','LineStyle','-.','LineWidth',2.5,'MarkerSize',9);
+semilogy2.MarkerFaceColor = [0.8500 0.3250 0.0980];
+semilogy3 = semilogy(Neig(1:7), abs(ErrLiH(1:7)),'-^','LineStyle',':', 'Color', '[0.4660 0.6740 0.1880]','LineWidth',2.5,'MarkerSize',9);
+semilogy3.MarkerFaceColor = [0.4660 0.6740 0.1880];
+set(semilogy1,'DisplayName','Si');
+set(semilogy2,'DisplayName','C');
+set(semilogy3,'DisplayName','LiH');
+ylabel({'Error (ha/atom)'});
+xlabel({'$N_r/N_e$'},'Interpreter','latex');
+box(axes1,'on');
+grid(axes1,'on');
+hold(axes1,'off');
+set(axes1,'FontName','Times New Roman','FontSize',24,'YMinorTick','on',...
+    'YScale','log');
+xlim([20 300]);
+xticks([20 40 80 140 200 260 300]);
+set(gcf, 'position', [10 10 670 420]);
+set(gca, 'position', [0.16 0.22 0.7164 0.7143]);
+legend1 = legend(axes1,'show');
+set(legend1,'FontSize',24);

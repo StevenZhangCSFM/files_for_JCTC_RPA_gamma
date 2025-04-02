@@ -1,0 +1,44 @@
+#Unit cell description
+#*********************
+acell  5.143564 5.143564 5.143564
+natom  2
+ntypat 1 
+typat  1 1
+znucl  14
+nband  10
+rprim  1.0 0.0 0.0
+       0.0 1.0 0.0
+       0.0 0.0 1.0
+xred   0.000    0.000    0.000
+       0.500    0.500    0.500
+ixc    11
+nsym   1
+nsppol 1
+
+#k-points and symetries
+#**********************
+kptopt 1
+ngkpt 1 1 1
+nshiftk 1  
+shiftk  0.0 0.0 0.0
+
+#Plane wave basis set
+#********************
+ecut   135.   # 600 800
+ecutsm 0.5d0 # What is its function? 0.5d0
+
+#SCF procedure parameters
+#************************
+nstep     50
+toldfe    3.d-6
+diemac    1.0 # Set as 1.0= MIXING_PRECOND: none
+diemix    0.4
+iscf      7 # potential pulay mixing
+occopt 3            # 1 = insulator, 3 =  Fermi-Dirac smearing, 7 = gaussian broadening
+tsmear 0.000001         # broadening energy parameter (Ha): default = 0.04, 0.01 better for d-band metals
+
+#Miscelaneous
+*************
+prtden 1
+prtwf  1
+prteig 1

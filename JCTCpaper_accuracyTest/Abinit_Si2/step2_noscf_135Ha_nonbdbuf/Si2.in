@@ -1,0 +1,40 @@
+#Unit cell description
+#*********************
+iscf   -2
+acell  5.143564 5.143564 5.143564
+natom  2
+ntypat 1 
+typat  1 1
+znucl  14
+nband  5066
+# nbdbuf 2
+# nnsclo 0
+# nstep 45
+rprim  1.0 0.0 0.0
+       0.0 1.0 0.0
+       0.0 0.0 1.0
+xred   0.000    0.000    0.000
+       0.500    0.500    0.500
+ixc    11
+nsym   1
+nsppol 1
+
+#k-points and symetries
+#**********************
+kptopt 1
+ngkpt 1 1 1
+nshiftk 1  
+shiftk  0.0 0.0 0.0
+
+#Plane wave basis set
+#********************
+ecut   135.   # 600 800
+ecutsm 0.5d0 # What is its function? 0.5d0
+
+tolwfr 1.d-5 # error of wave function, the criteria of non-scf calculation
+
+#Miscelaneous
+*************
+prtden 1
+prtwf  1
+prteig 1

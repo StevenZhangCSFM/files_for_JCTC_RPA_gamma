@@ -1,0 +1,25 @@
+%% current part code
+figure;
+axes1 = axes('Position',[0.15 0.25 0.8 0.7]);
+hold(axes1,'on');
+% h = bar(times111, 'stacked');
+% h = bar(times221, 'stacked');
+h = bar(times222, 'stacked');
+h(1).FaceColor = [0.6350 0.0780 0.1840];
+h(2).FaceColor = [0 1 0.7410];
+h(3).FaceColor = [0 0.4470 0.7410];
+h(4).FaceColor = [0.9290 0.6940 0.1250];
+% xTickLabels = {'72', '144', '288', '576','1152'};
+% xTickLabels = {'144', '288', '576','1152','2304'};
+xTickLabels = {'288', '576','1152','2304','4608'};
+set(axes1,'FontName','Times New Roman','FontSize',15,'XTickLabel', xTickLabels, 'XTick', 1:5);
+xlabel('Number of Processors and Permutation');
+ylabel('Time (s)');
+% ylim([0,10]);
+% ylim([0,300]);
+ylim([0,1200]);
+box(axes1,'on');
+grid(axes1,'on');
+legend1 = legend('Kronecker product','Initial guess generation', 'COCG solver', 'Projection & orthonormalization','Spectral quadrature', 'Location', 'northeast');
+set(legend1,'interpreter','Latex','FontSize',15);
+grid on;

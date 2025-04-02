@@ -1,0 +1,41 @@
+#Unit cell description
+#*********************
+iscf   -2
+acell  3.364425 3.364425 3.364425
+natom  2
+ntypat 1 
+typat  1 1
+znucl  6
+nband  2473
+rprim  1.0 0.0 0.0
+       0.0 1.0 0.0
+       0.0 0.0 1.0
+xred   0.000    0.000    0.000
+       0.500    0.500    0.500
+ixc    11
+nsym   1
+nsppol 1
+
+#k-points and symetries
+#**********************
+kptopt 1
+ngkpt 1 1 1
+nshiftk 1  
+shiftk  0.0 0.0 0.0
+
+#Plane wave basis set
+#********************
+ecut   195.   # 600 800
+ecutsm 0.5d0 # What is its function? 0.5d0
+
+# Calculation of the screening (epsilon^-1 matrix)
+optdriver  3        # Screening calculation
+gwrpacorr  1
+gwcalctyp  1        # Gauss-Legendre frequency mesh on the imaginary axis
+nfreqim    8        # No. of points along the imaginary axis for chi0
+getwfk     -1       # Obtain WFK file from previous dataset
+# nband      100       # Bands to be used in the screening calculation
+ecuteps    195      # Cut-off energy of the planewave set to represent the dielectric matrix. 
+                     # It is important to adjust this parameter.
+ppmfrq    5.0   # Imaginary frequency where to calculate the screening, Hatree
+inclvkb    2

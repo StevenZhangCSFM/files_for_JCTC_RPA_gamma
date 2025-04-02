@@ -1,0 +1,213 @@
+***************************************************************************
+*                       SPARC (version Nov 06, 2024)                      *
+*   Copyright (c) 2020 Material Physics & Mechanics Group, Georgia Tech   *
+*           Distributed under GNU General Public License 3 (GPL)          *
+*                   Start time: Sat Feb  8 17:00:05 2025                  *
+***************************************************************************
+                           Input parameters                                
+***************************************************************************
+LATVEC_SCALE: 7.5915 7.5915 7.5915 
+LATVEC:
+1.000000000000000 0.000000000000000 0.000000000000000 
+0.000000000000000 1.000000000000000 0.000000000000000 
+0.000000000000000 0.000000000000000 1.000000000000000 
+FD_GRID: 31 31 31
+FD_ORDER: 12
+BC: P P P
+KPOINT_GRID: 1 1 1
+KPOINT_SHIFT: 0 0 0
+SPIN_TYP: 0
+ELEC_TEMP_TYPE: Fermi-Dirac
+SMEARING: 1e-06
+EXCHANGE_CORRELATION: GGA_PBE
+NSTATES: 10
+CHEB_DEGREE: 30
+CHEFSI_BOUND_FLAG: 0
+CALC_STRESS: 0
+CALC_PRES: 0
+MAXIT_SCF: 100
+MINIT_SCF: 2
+MAXIT_POISSON: 3000
+TOL_SCF: 1.00E-05
+POISSON_SOLVER: AAR
+TOL_POISSON: 1.00E-07
+TOL_LANCZOS: 1.00E-02
+TOL_PSEUDOCHARGE: 1.00E-08
+MIXING_VARIABLE: density
+MIXING_PRECOND: kerker
+TOL_PRECOND: 6.00E-05
+PRECOND_KERKER_KTF: 1
+PRECOND_KERKER_THRESH: 0.1
+MIXING_PARAMETER: 0.01
+MIXING_HISTORY: 7
+PULAY_FREQUENCY: 1
+PULAY_RESTART: 0
+REFERENCE_CUTOFF: 0.5
+RHO_TRIGGER: 4
+NUM_CHEFSI: 1
+FIX_RAND: 0
+VERBOSITY: 1
+PRINT_FORCES: 1
+PRINT_ATOMS: 1
+PRINT_EIGEN: 1
+PRINT_DENSITY: 1
+PRINT_ORBITAL: 2
+PRINT_ENERGY_DENSITY: 0
+OUTPUT_FILE: LiH
+***************************************************************************
+                                Cell                                       
+***************************************************************************
+Lattice vectors (Bohr):
+7.591500000000000 0.000000000000000 0.000000000000000 
+0.000000000000000 7.591500000000000 0.000000000000000 
+0.000000000000000 0.000000000000000 7.591500000000000 
+Volume: 4.3750476669E+02 (Bohr^3)
+Density: 7.2917834111E-02 (amu/Bohr^3), 8.1710799306E-01 (g/cc)
+***************************************************************************
+                           Parallelization                                 
+***************************************************************************
+NP_SPIN_PARAL: 1
+NP_KPOINT_PARAL: 1
+NP_BAND_PARAL: 1
+NP_DOMAIN_PARAL: 1 1 1
+NP_DOMAIN_PHI_PARAL: 1 1 1
+EIG_SERIAL_MAXNS: 1500
+WARNING: Default parallelization not used. This could result in degradation of performance.
+***************************************************************************
+                             Initialization                                
+***************************************************************************
+Number of processors               :  72
+Mesh spacing                       :  0.244887 (Bohr)
+Number of symmetry adapted k-points:  1
+Output printed to                  :  LiH.out
+Final eigenvalues printed to       :  LiH.eigen
+Total number of atom types         :  2
+Total number of atoms              :  8
+Total number of electrons          :  16
+Atom type 1  (valence electrons)   :  H 1
+Pseudopotential                    :  ../01_H_1_1.0_1.0_pbe_v1.0.psp8
+Atomic mass                        :  1.007975
+Pseudocharge radii of atom type 1  :  4.16 4.16 4.16 (x, y, z dir)
+Number of atoms of type 1          :  4
+Atom type 2  (valence electrons)   :  Li 3
+Pseudopotential                    :  ../03_Li_3_1.6_1.6_pbe_v1.0.psp8
+Atomic mass                        :  6.9675
+Pseudocharge radii of atom type 2  :  4.90 4.90 4.90 (x, y, z dir)
+Number of atoms of type 2          :  4
+Estimated total memory usage       :  15.75 MB
+Estimated memory per processor     :  224.05 kB
+***************************************************************************
+                            RPA Settings                                   
+***************************************************************************
+N_NUCHI_EIGS: 4160
+N_OMEGA: 8
+STERN_BLOCK_SIZE: 1 1 1 1 1 1 1 1 
+TOL_ERPA: 1.000E-06
+TOL_STERN_RES: 1.000E-03
+FLAG_PQ_OPERATOR: 0
+FLAG_COCGINITIAL: 1
+FLAG_PRECONDITION: 0 0 0 0 0 0 0 0 
+MAXIT_FILTERING: 25
+INPUT_DENS_FILE: UNDEFINED
+FLAG_CYCLIC_PERMUTE: 1
+SQ_FLAG_RPA: 1
+SQ_NPL_RPA: 7
+FLAG_PRINT_EIGS: 0
+***************************************************************************
+                         RPA Parallelization                               
+***************************************************************************
+NP_NUCHI_EIGS_PARAL_RPA: 72
+NP_SPIN_PARAL_RPA: 1
+NP_KPOINT_PARAL_RPA: 1
+NP_BAND_PARAL_RPA: 1
+NP_DIAG_SQ: 72
+***************************************************************************
+Estimated memory usage in RPA calculation is 289.12 MB
+***************************************************************************
+q-point 1 (reduced coords 0.000 0.000 0.000), weight 1.000
+ omega 1 (value 49.365, 0~1 value 0.020, weight 0.051)
+nIter|ErpaTerm(Ha/atom)|Timing (s)
+  1     -1.599E-03      14.85
+  2     -2.502E-03      13.82
+  3     -2.560E-03      13.82
+  4     -2.567E-03      13.83
+  5     -2.570E-03      13.82
+  6     -2.571E-03      13.76
+  7     -2.571E-03      13.84
+  8     -2.571E-03      13.79
+  9     -2.572E-03      13.88
+ 10     -2.572E-03      13.80
+ 11     -2.572E-03      13.80
+***************************************************************************
+q-point 1 (reduced coords 0.000 0.000 0.000), weight 1.000
+ omega 2 (value 8.836, 0~1 value 0.102, weight 0.111)
+nIter|ErpaTerm(Ha/atom)|Timing (s)
+  1     -1.001E-02      27.86
+  2     -1.007E-02      26.47
+  3     -1.008E-02      26.78
+  4     -1.009E-02      26.95
+  5     -1.009E-02      26.76
+  6     -1.009E-02      26.77
+  7     -1.010E-02      26.71
+  8     -1.010E-02      26.76
+  9     -1.010E-02      26.76
+ 10     -1.010E-02      26.73
+***************************************************************************
+q-point 1 (reduced coords 0.000 0.000 0.000), weight 1.000
+ omega 3 (value 3.215, 0~1 value 0.237, weight 0.157)
+nIter|ErpaTerm(Ha/atom)|Timing (s)
+  1     -1.357E-02      38.04
+  2     -1.357E-02      36.02
+  3     -1.357E-02      36.34
+***************************************************************************
+q-point 1 (reduced coords 0.000 0.000 0.000), weight 1.000
+ omega 4 (value 1.449, 0~1 value 0.408, weight 0.181)
+nIter|ErpaTerm(Ha/atom)|Timing (s)
+  1     -1.313E-02      45.37
+  2     -1.313E-02      43.42
+***************************************************************************
+q-point 1 (reduced coords 0.000 0.000 0.000), weight 1.000
+ omega 5 (value 0.690, 0~1 value 0.592, weight 0.181)
+nIter|ErpaTerm(Ha/atom)|Timing (s)
+  1     -1.272E-02      51.52
+  2     -1.272E-02      49.96
+***************************************************************************
+q-point 1 (reduced coords 0.000 0.000 0.000), weight 1.000
+ omega 6 (value 0.311, 0~1 value 0.763, weight 0.157)
+nIter|ErpaTerm(Ha/atom)|Timing (s)
+  1     -1.224E-02      57.72
+  2     -1.224E-02      56.63
+***************************************************************************
+q-point 1 (reduced coords 0.000 0.000 0.000), weight 1.000
+ omega 7 (value 0.113, 0~1 value 0.898, weight 0.111)
+nIter|ErpaTerm(Ha/atom)|Timing (s)
+  1     -9.793E-03      62.86
+  2     -9.793E-03      61.41
+***************************************************************************
+q-point 1 (reduced coords 0.000 0.000 0.000), weight 1.000
+ omega 8 (value 0.020, 0~1 value 0.980, weight 0.051)
+nIter|ErpaTerm(Ha/atom)|Timing (s)
+  1     -4.981E-03      63.11
+  2     -4.981E-03      61.16
+***************************************************************************
+Energy terms in every (qpt, omega) pair (Ha/atom)
+q-point 1
+omega 1: -2.57179E-03, omega 2: -1.00956E-02, omega 3: -1.35724E-02, 
+omega 4: -1.31274E-02, omega 5: -1.27217E-02, omega 6: -1.22350E-02, 
+omega 7: -9.79284E-03, omega 8: -4.98106E-03, 
+Total RPA correlation energy: -6.327829E-01 (Ha), -7.909787E-02 (Ha/atom)
+***************************************************************************
+                               Timing info                                 
+***************************************************************************
+Total walltime                     :  1087.446 sec
+___________________________________________________________________________
+
+***************************************************************************
+*             Material Physics & Mechanics Group, Georgia Tech            *
+*                       PI: Phanish Suryanarayana                         *
+*               List of contributors: See the documentation               *
+*         Citation: See README.md or the documentation for details        *
+*  Acknowledgements: U.S. DOE SC (DE-SC0019410), U.S. DOE NNSA (ASC)      *
+*      {Preliminary developments: U.S. NSF (1333500,1663244,1553212)}     *
+***************************************************************************
+                                                                           

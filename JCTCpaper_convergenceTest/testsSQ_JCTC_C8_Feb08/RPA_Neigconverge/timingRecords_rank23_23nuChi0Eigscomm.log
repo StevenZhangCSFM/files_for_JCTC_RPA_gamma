@@ -1,0 +1,171 @@
+global rank = 23, HpSQ topo 3, mbHpSQ = 128, myrow 5, nprow 6, mycol 0, npcol 1, nrHpSQ = 1, ncHpSQ = 640
+global rank = 23, HpSQ topo 3, myrow 5, nprow 6, mycol 0, npcol 1, nrvk 105, vkStart 535, vkEnd 639, nrvk_BLCYC 1
+nuChi0Eigscomm 23, rank 0, omega 0, sumOperatorMulTime_nuChi0EigsComm 167.052 s, composed of sumSqrtNuMulVecsTime 276.038 ms, sumSternheimerTime 166775.813 ms, sumCollectdRhoTime 0.052 ms
+In sumSternheimerTime, sumIniGuessTime 14189.402 ms; sumCOCGTime 151248.368 ms, composed of sumLhsfunTime 96071.517 ms, sumSolveMuTime 217.702 ms, sumMultipleTime 37381.159 ms
+nuChi0Eigscomm 23, rank 0, omega 1, sumOperatorMulTime_nuChi0EigsComm 425.525 s, composed of sumSqrtNuMulVecsTime 273.493 ms, sumSternheimerTime 425251.328 ms, sumCollectdRhoTime 0.032 ms
+In sumSternheimerTime, sumIniGuessTime 13699.749 ms; sumCOCGTime 410330.854 ms, composed of sumLhsfunTime 261211.304 ms, sumSolveMuTime 582.467 ms, sumMultipleTime 105846.069 ms
+nuChi0Eigscomm 23, rank 0, omega 2, sumOperatorMulTime_nuChi0EigsComm 551.646 s, composed of sumSqrtNuMulVecsTime 211.423 ms, sumSternheimerTime 551434.174 ms, sumCollectdRhoTime 0.042 ms
+In sumSternheimerTime, sumIniGuessTime 10517.322 ms; sumCOCGTime 539988.261 ms, composed of sumLhsfunTime 344631.684 ms, sumSolveMuTime 767.015 ms, sumMultipleTime 140127.344 ms
+nuChi0Eigscomm 23, rank 0, omega 3, sumOperatorMulTime_nuChi0EigsComm 198.249 s, composed of sumSqrtNuMulVecsTime 54.664 ms, sumSternheimerTime 198193.840 ms, sumCollectdRhoTime 0.009 ms
+In sumSternheimerTime, sumIniGuessTime 2734.098 ms; sumCOCGTime 195219.583 ms, composed of sumLhsfunTime 124787.376 ms, sumSolveMuTime 275.361 ms, sumMultipleTime 50740.867 ms
+nuChi0Eigscomm 23, rank 0, omega 4, sumOperatorMulTime_nuChi0EigsComm 120.279 s, composed of sumSqrtNuMulVecsTime 27.326 ms, sumSternheimerTime 120251.752 ms, sumCollectdRhoTime 0.003 ms
+In sumSternheimerTime, sumIniGuessTime 1370.442 ms; sumCOCGTime 118760.544 ms, composed of sumLhsfunTime 75861.808 ms, sumSolveMuTime 163.412 ms, sumMultipleTime 30982.622 ms
+nuChi0Eigscomm 23, rank 0, omega 5, sumOperatorMulTime_nuChi0EigsComm 136.325 s, composed of sumSqrtNuMulVecsTime 27.512 ms, sumSternheimerTime 136297.528 ms, sumCollectdRhoTime 0.004 ms
+In sumSternheimerTime, sumIniGuessTime 1372.854 ms; sumCOCGTime 134803.992 ms, composed of sumLhsfunTime 86413.464 ms, sumSolveMuTime 187.082 ms, sumMultipleTime 34971.224 ms
+nuChi0Eigscomm 23, rank 0, omega 6, sumOperatorMulTime_nuChi0EigsComm 147.000 s, composed of sumSqrtNuMulVecsTime 28.104 ms, sumSternheimerTime 146972.167 ms, sumCollectdRhoTime 0.006 ms
+In sumSternheimerTime, sumIniGuessTime 1372.463 ms; sumCOCGTime 145478.896 ms, composed of sumLhsfunTime 93025.294 ms, sumSolveMuTime 213.972 ms, sumMultipleTime 37776.485 ms
+nuChi0Eigscomm 23, rank 0, omega 7, sumOperatorMulTime_nuChi0EigsComm 101.055 s, composed of sumSqrtNuMulVecsTime 19.399 ms, sumSternheimerTime 101035.742 ms, sumCollectdRhoTime 0.005 ms
+In sumSternheimerTime, sumIniGuessTime 913.149 ms; sumCOCGTime 100042.240 ms, composed of sumLhsfunTime 63890.302 ms, sumSolveMuTime 145.905 ms, sumMultipleTime 26157.207 ms
+global rank = 23, size_blacscomm = 240, nuChi0 ScaLAPACK topology 0, Dims = (240, 1)
+global rank = 23, 1D topo, my nuChi0 blacs rank = 23, BLCYC size (91125, 3), actual size (91125, 3), DMndspe 91125, mb 91125, myrow 0, nprow 1, nuChi0Neig 640, nb 3, mycol 23, npcol 240
+global rank = 23, 1D topo, my Permute blacs rank = 23, BLCYC size (640, 3), nuChi0Neig 640, mbP 640, myrow 0, nprow 1, nuChi0Neig 640, nbP 3, mycol 23, npcol 240
+global rank = 23, 2D topo, my nuChi0 blacs rank = 23, BLCYC size (379, 640), actual size (91125, 3), DMndspe 91125, mb 379, myrow 23, nprow 240, nuChi0Neig 640, nb 640, mycol 0, npcol 1
+global rank = 23, Hp topo, mb = 640, mbQ = 64, myrow 23, nprow 240, mycol 0, npcol 1, nr_Hp = 1, nc_Hp = 640
+global rank = 23, HpSQ topo 7, mbHpSQ = 128, myrow 2, nprow 3, mycol 0, npcol 1, nrHpSQ = 384, ncHpSQ = 1280
+global rank = 23, HpSQ topo 7, myrow 2, nprow 3, mycol 0, npcol 1, nrvk 426, vkStart 854, vkEnd 1279, nrvk_BLCYC 384
+nuChi0Eigscomm 23, rank 0, omega 0, sumOperatorMulTime_nuChi0EigsComm 308.797 s, composed of sumSqrtNuMulVecsTime 518.550 ms, sumSternheimerTime 308278.758 ms, sumCollectdRhoTime 0.063 ms
+In sumSternheimerTime, sumIniGuessTime 11809.718 ms; sumCOCGTime 294160.272 ms, composed of sumLhsfunTime 186968.908 ms, sumSolveMuTime 504.418 ms, sumMultipleTime 73043.421 ms
+nuChi0Eigscomm 23, rank 0, omega 1, sumOperatorMulTime_nuChi0EigsComm 794.089 s, composed of sumSqrtNuMulVecsTime 497.894 ms, sumSternheimerTime 793590.979 ms, sumCollectdRhoTime 0.042 ms
+In sumSternheimerTime, sumIniGuessTime 11174.148 ms; sumCOCGTime 780275.729 ms, composed of sumLhsfunTime 497773.623 ms, sumSolveMuTime 1273.517 ms, sumMultipleTime 201045.845 ms
+nuChi0Eigscomm 23, rank 0, omega 2, sumOperatorMulTime_nuChi0EigsComm 379.910 s, composed of sumSqrtNuMulVecsTime 150.274 ms, sumSternheimerTime 379759.396 ms, sumCollectdRhoTime 0.018 ms
+In sumSternheimerTime, sumIniGuessTime 3199.824 ms; sumCOCGTime 375947.780 ms, composed of sumLhsfunTime 240115.595 ms, sumSolveMuTime 596.867 ms, sumMultipleTime 97463.640 ms
+nuChi0Eigscomm 23, rank 0, omega 3, sumOperatorMulTime_nuChi0EigsComm 191.481 s, composed of sumSqrtNuMulVecsTime 59.569 ms, sumSternheimerTime 191421.410 ms, sumCollectdRhoTime 0.012 ms
+In sumSternheimerTime, sumIniGuessTime 1197.597 ms; sumCOCGTime 189992.804 ms, composed of sumLhsfunTime 121361.222 ms, sumSolveMuTime 299.841 ms, sumMultipleTime 49466.136 ms
+nuChi0Eigscomm 23, rank 0, omega 4, sumOperatorMulTime_nuChi0EigsComm 227.899 s, composed of sumSqrtNuMulVecsTime 60.859 ms, sumSternheimerTime 227838.082 ms, sumCollectdRhoTime 0.009 ms
+In sumSternheimerTime, sumIniGuessTime 1199.233 ms; sumCOCGTime 226407.649 ms, composed of sumLhsfunTime 144665.016 ms, sumSolveMuTime 343.201 ms, sumMultipleTime 58905.085 ms
+nuChi0Eigscomm 23, rank 0, omega 5, sumOperatorMulTime_nuChi0EigsComm 249.648 s, composed of sumSqrtNuMulVecsTime 60.558 ms, sumSternheimerTime 249587.741 ms, sumCollectdRhoTime 0.013 ms
+In sumSternheimerTime, sumIniGuessTime 1199.147 ms; sumCOCGTime 248157.398 ms, composed of sumLhsfunTime 158442.588 ms, sumSolveMuTime 372.330 ms, sumMultipleTime 64742.785 ms
+nuChi0Eigscomm 23, rank 0, omega 6, sumOperatorMulTime_nuChi0EigsComm 173.999 s, composed of sumSqrtNuMulVecsTime 40.296 ms, sumSternheimerTime 173958.294 ms, sumCollectdRhoTime 0.006 ms
+In sumSternheimerTime, sumIniGuessTime 799.816 ms; sumCOCGTime 173004.610 ms, composed of sumLhsfunTime 110731.948 ms, sumSolveMuTime 260.880 ms, sumMultipleTime 45032.442 ms
+nuChi0Eigscomm 23, rank 0, omega 7, sumOperatorMulTime_nuChi0EigsComm 173.319 s, composed of sumSqrtNuMulVecsTime 40.612 ms, sumSternheimerTime 173278.676 ms, sumCollectdRhoTime 0.005 ms
+In sumSternheimerTime, sumIniGuessTime 798.207 ms; sumCOCGTime 172327.162 ms, composed of sumLhsfunTime 110159.488 ms, sumSolveMuTime 263.369 ms, sumMultipleTime 45008.536 ms
+global rank = 23, size_blacscomm = 240, nuChi0 ScaLAPACK topology 0, Dims = (120, 2)
+global rank = 23, 1D topo, my nuChi0 blacs rank = 23, BLCYC size (91125, 6), actual size (91125, 6), DMndspe 91125, mb 91125, myrow 0, nprow 1, nuChi0Neig 1280, nb 6, mycol 23, npcol 240
+global rank = 23, 1D topo, my Permute blacs rank = 23, BLCYC size (1280, 6), nuChi0Neig 1280, mbP 1280, myrow 0, nprow 1, nuChi0Neig 1280, nbP 6, mycol 23, npcol 240
+global rank = 23, 2D topo, my nuChi0 blacs rank = 23, BLCYC size (759, 640), actual size (91125, 6), DMndspe 91125, mb 759, myrow 11, nprow 120, nuChi0Neig 1280, nb 640, mycol 1, npcol 2
+global rank = 23, Hp topo, mb = 1280, mbQ = 64, myrow 11, nprow 120, mycol 1, npcol 2, nr_Hp = 1, nc_Hp = 1
+global rank = 23, size_blacscomm = 240, nuChi0 ScaLAPACK topology 0, Dims = (80, 3)
+global rank = 23, 1D topo, my nuChi0 blacs rank = 23, BLCYC size (91125, 11), actual size (91125, 11), DMndspe 91125, mb 91125, myrow 0, nprow 1, nuChi0Neig 2560, nb 11, mycol 23, npcol 240
+global rank = 23, 1D topo, my Permute blacs rank = 23, BLCYC size (2560, 11), nuChi0Neig 2560, mbP 2560, myrow 0, nprow 1, nuChi0Neig 2560, nbP 11, mycol 23, npcol 240
+global rank = 23, 2D topo, my nuChi0 blacs rank = 23, BLCYC size (1139, 853), actual size (91125, 11), DMndspe 91125, mb 1139, myrow 7, nprow 80, nuChi0Neig 2560, nb 853, mycol 2, npcol 3
+global rank = 23, Hp topo, mb = 128, mbQ = 128, myrow 7, nprow 80, mycol 2, npcol 3, nr_Hp = 128, nc_Hp = 768
+global rank = 23, Maximun number of processors for RPA eigenvalue solver is 93
+global rank = 23, The dimension of subgrid for RPA eigen solver is (10 x 10).
+global rank = 23, HpSQ topo 23, mbHpSQ = 2560, myrow 0, nprow 1, mycol 0, npcol 1, nrHpSQ = 2560, ncHpSQ = 2560
+global rank = 23, HpSQ topo 23, myrow 0, nprow 1, mycol 0, npcol 1, nrvk 2560, vkStart 0, vkEnd 2559, nrvk_BLCYC 2560
+nuChi0Eigscomm 23, rank 0, omega 0, sumOperatorMulTime_nuChi0EigsComm 497.106 s, composed of sumSqrtNuMulVecsTime 814.947 ms, sumSternheimerTime 496290.520 ms, sumCollectdRhoTime 0.047 ms
+In sumSternheimerTime, sumIniGuessTime 13615.846 ms; sumCOCGTime 477971.325 ms, composed of sumLhsfunTime 306914.310 ms, sumSolveMuTime 784.632 ms, sumMultipleTime 115833.244 ms
+nuChi0Eigscomm 23, rank 0, omega 1, sumOperatorMulTime_nuChi0EigsComm 1214.387 s, composed of sumSqrtNuMulVecsTime 744.238 ms, sumSternheimerTime 1213643.024 ms, sumCollectdRhoTime 0.033 ms
+In sumSternheimerTime, sumIniGuessTime 12427.509 ms; sumCOCGTime 1197043.631 ms, composed of sumLhsfunTime 769659.516 ms, sumSolveMuTime 2076.907 ms, sumMultipleTime 302819.979 ms
+nuChi0Eigscomm 23, rank 0, omega 2, sumOperatorMulTime_nuChi0EigsComm 438.923 s, composed of sumSqrtNuMulVecsTime 169.145 ms, sumSternheimerTime 438754.343 ms, sumCollectdRhoTime 0.009 ms
+In sumSternheimerTime, sumIniGuessTime 2690.358 ms; sumCOCGTime 435192.406 ms, composed of sumLhsfunTime 279697.680 ms, sumSolveMuTime 747.481 ms, sumMultipleTime 111272.566 ms
+nuChi0Eigscomm 23, rank 0, omega 3, sumOperatorMulTime_nuChi0EigsComm 232.358 s, composed of sumSqrtNuMulVecsTime 71.252 ms, sumSternheimerTime 232286.395 ms, sumCollectdRhoTime 0.006 ms
+In sumSternheimerTime, sumIniGuessTime 1084.383 ms; sumCOCGTime 230753.924 ms, composed of sumLhsfunTime 148179.453 ms, sumSolveMuTime 398.755 ms, sumMultipleTime 59455.974 ms
+nuChi0Eigscomm 23, rank 0, omega 4, sumOperatorMulTime_nuChi0EigsComm 273.759 s, composed of sumSqrtNuMulVecsTime 71.562 ms, sumSternheimerTime 273687.248 ms, sumCollectdRhoTime 0.005 ms
+In sumSternheimerTime, sumIniGuessTime 1076.103 ms; sumCOCGTime 272261.282 ms, composed of sumLhsfunTime 175022.658 ms, sumSolveMuTime 471.283 ms, sumMultipleTime 70122.687 ms
+nuChi0Eigscomm 23, rank 0, omega 5, sumOperatorMulTime_nuChi0EigsComm 298.081 s, composed of sumSqrtNuMulVecsTime 75.400 ms, sumSternheimerTime 298005.862 ms, sumCollectdRhoTime 0.006 ms
+In sumSternheimerTime, sumIniGuessTime 1075.046 ms; sumCOCGTime 296372.067 ms, composed of sumLhsfunTime 190496.206 ms, sumSolveMuTime 517.030 ms, sumMultipleTime 76382.074 ms
+nuChi0Eigscomm 23, rank 0, omega 6, sumOperatorMulTime_nuChi0EigsComm 307.788 s, composed of sumSqrtNuMulVecsTime 75.529 ms, sumSternheimerTime 307712.202 ms, sumCollectdRhoTime 0.005 ms
+In sumSternheimerTime, sumIniGuessTime 1077.057 ms; sumCOCGTime 306282.642 ms, composed of sumLhsfunTime 196597.124 ms, sumSolveMuTime 525.040 ms, sumMultipleTime 79218.409 ms
+nuChi0Eigscomm 23, rank 0, omega 7, sumOperatorMulTime_nuChi0EigsComm 309.039 s, composed of sumSqrtNuMulVecsTime 74.859 ms, sumSternheimerTime 308964.096 ms, sumCollectdRhoTime 0.010 ms
+In sumSternheimerTime, sumIniGuessTime 1078.825 ms; sumCOCGTime 307531.871 ms, composed of sumLhsfunTime 197313.049 ms, sumSolveMuTime 469.380 ms, sumMultipleTime 79632.977 ms
+global rank = 23, size_blacscomm = 240, nuChi0 ScaLAPACK topology 0, Dims = (80, 3)
+global rank = 23, 1D topo, my nuChi0 blacs rank = 23, BLCYC size (91125, 19), actual size (91125, 19), DMndspe 91125, mb 91125, myrow 0, nprow 1, nuChi0Neig 4480, nb 19, mycol 23, npcol 240
+global rank = 23, 1D topo, my Permute blacs rank = 23, BLCYC size (4480, 19), nuChi0Neig 4480, mbP 4480, myrow 0, nprow 1, nuChi0Neig 4480, nbP 19, mycol 23, npcol 240
+global rank = 23, 2D topo, my nuChi0 blacs rank = 23, BLCYC size (1139, 1493), actual size (91125, 19), DMndspe 91125, mb 1139, myrow 7, nprow 80, nuChi0Neig 4480, nb 1493, mycol 2, npcol 3
+global rank = 23, Hp topo, mb = 128, mbQ = 128, myrow 7, nprow 80, mycol 2, npcol 3, nr_Hp = 128, nc_Hp = 1408
+global rank = 23, Maximun number of processors for RPA eigenvalue solver is 163
+global rank = 23, The dimension of subgrid for RPA eigen solver is (13 x 13).
+global rank = 23, HpSQ topo 23, mbHpSQ = 4480, myrow 0, nprow 1, mycol 0, npcol 1, nrHpSQ = 4480, ncHpSQ = 4480
+global rank = 23, HpSQ topo 23, myrow 0, nprow 1, mycol 0, npcol 1, nrvk 4480, vkStart 0, vkEnd 4479, nrvk_BLCYC 4480
+nuChi0Eigscomm 23, rank 0, omega 0, sumOperatorMulTime_nuChi0EigsComm 775.059 s, composed of sumSqrtNuMulVecsTime 1222.847 ms, sumSternheimerTime 773836.592 ms, sumCollectdRhoTime 0.044 ms
+In sumSternheimerTime, sumIniGuessTime 20243.554 ms; sumCOCGTime 747718.972 ms, composed of sumLhsfunTime 479182.412 ms, sumSolveMuTime 1332.324 ms, sumMultipleTime 182609.853 ms
+nuChi0Eigscomm 23, rank 0, omega 1, sumOperatorMulTime_nuChi0EigsComm 1401.876 s, composed of sumSqrtNuMulVecsTime 828.959 ms, sumSternheimerTime 1401046.723 ms, sumCollectdRhoTime 0.023 ms
+In sumSternheimerTime, sumIniGuessTime 14421.231 ms; sumCOCGTime 1381099.737 ms, composed of sumLhsfunTime 882283.374 ms, sumSolveMuTime 2710.982 ms, sumMultipleTime 355556.069 ms
+nuChi0Eigscomm 23, rank 0, omega 2, sumOperatorMulTime_nuChi0EigsComm 452.222 s, composed of sumSqrtNuMulVecsTime 176.197 ms, sumSternheimerTime 452045.511 ms, sumCollectdRhoTime 0.007 ms
+In sumSternheimerTime, sumIniGuessTime 2718.311 ms; sumCOCGTime 448539.508 ms, composed of sumLhsfunTime 286817.896 ms, sumSolveMuTime 856.652 ms, sumMultipleTime 116444.266 ms
+nuChi0Eigscomm 23, rank 0, omega 3, sumOperatorMulTime_nuChi0EigsComm 385.233 s, composed of sumSqrtNuMulVecsTime 124.436 ms, sumSternheimerTime 385108.852 ms, sumCollectdRhoTime 0.006 ms
+In sumSternheimerTime, sumIniGuessTime 1807.878 ms; sumCOCGTime 382773.303 ms, composed of sumLhsfunTime 245546.656 ms, sumSolveMuTime 720.410 ms, sumMultipleTime 98978.118 ms
+nuChi0Eigscomm 23, rank 0, omega 4, sumOperatorMulTime_nuChi0EigsComm 440.407 s, composed of sumSqrtNuMulVecsTime 126.989 ms, sumSternheimerTime 440280.179 ms, sumCollectdRhoTime 0.005 ms
+In sumSternheimerTime, sumIniGuessTime 1817.853 ms; sumCOCGTime 437934.492 ms, composed of sumLhsfunTime 280208.507 ms, sumSolveMuTime 757.875 ms, sumMultipleTime 113855.142 ms
+nuChi0Eigscomm 23, rank 0, omega 5, sumOperatorMulTime_nuChi0EigsComm 473.681 s, composed of sumSqrtNuMulVecsTime 126.561 ms, sumSternheimerTime 473554.864 ms, sumCollectdRhoTime 0.009 ms
+In sumSternheimerTime, sumIniGuessTime 1821.622 ms; sumCOCGTime 471204.337 ms, composed of sumLhsfunTime 302230.334 ms, sumSolveMuTime 899.634 ms, sumMultipleTime 121872.388 ms
+nuChi0Eigscomm 23, rank 0, omega 6, sumOperatorMulTime_nuChi0EigsComm 491.428 s, composed of sumSqrtNuMulVecsTime 124.303 ms, sumSternheimerTime 491303.232 ms, sumCollectdRhoTime 0.005 ms
+In sumSternheimerTime, sumIniGuessTime 1896.525 ms; sumCOCGTime 488555.999 ms, composed of sumLhsfunTime 310602.453 ms, sumSolveMuTime 953.682 ms, sumMultipleTime 129136.406 ms
+nuChi0Eigscomm 23, rank 0, omega 7, sumOperatorMulTime_nuChi0EigsComm 489.645 s, composed of sumSqrtNuMulVecsTime 123.778 ms, sumSternheimerTime 489521.524 ms, sumCollectdRhoTime 0.005 ms
+In sumSternheimerTime, sumIniGuessTime 1832.577 ms; sumCOCGTime 487160.096 ms, composed of sumLhsfunTime 310914.112 ms, sumSolveMuTime 924.569 ms, sumMultipleTime 127483.419 ms
+global rank = 23, size_blacscomm = 240, nuChi0 ScaLAPACK topology 0, Dims = (60, 4)
+global rank = 23, 1D topo, my nuChi0 blacs rank = 23, BLCYC size (91125, 27), actual size (91125, 27), DMndspe 91125, mb 91125, myrow 0, nprow 1, nuChi0Neig 6400, nb 27, mycol 23, npcol 240
+global rank = 23, 1D topo, my Permute blacs rank = 23, BLCYC size (6400, 27), nuChi0Neig 6400, mbP 6400, myrow 0, nprow 1, nuChi0Neig 6400, nbP 27, mycol 23, npcol 240
+global rank = 23, 2D topo, my nuChi0 blacs rank = 23, BLCYC size (1518, 1600), actual size (91125, 27), DMndspe 91125, mb 1518, myrow 5, nprow 60, nuChi0Neig 6400, nb 1600, mycol 3, npcol 4
+global rank = 23, Hp topo, mb = 128, mbQ = 128, myrow 5, nprow 60, mycol 3, npcol 4, nr_Hp = 128, nc_Hp = 1536
+global rank = 23, Maximun number of processors for RPA eigenvalue solver is 232
+global rank = 23, The dimension of subgrid for RPA eigen solver is (15 x 15).
+global rank = 23, HpSQ topo 23, mbHpSQ = 6400, myrow 0, nprow 1, mycol 0, npcol 1, nrHpSQ = 6400, ncHpSQ = 6400
+global rank = 23, HpSQ topo 23, myrow 0, nprow 1, mycol 0, npcol 1, nrvk 6400, vkStart 0, vkEnd 6399, nrvk_BLCYC 6400
+nuChi0Eigscomm 23, rank 0, omega 0, sumOperatorMulTime_nuChi0EigsComm 1017.156 s, composed of sumSqrtNuMulVecsTime 1574.254 ms, sumSternheimerTime 1015581.892 ms, sumCollectdRhoTime 0.042 ms
+In sumSternheimerTime, sumIniGuessTime 22974.310 ms; sumCOCGTime 984757.116 ms, composed of sumLhsfunTime 629722.519 ms, sumSolveMuTime 1773.176 ms, sumMultipleTime 242170.774 ms
+nuChi0Eigscomm 23, rank 0, omega 1, sumOperatorMulTime_nuChi0EigsComm 1592.642 s, composed of sumSqrtNuMulVecsTime 936.235 ms, sumSternheimerTime 1591705.979 ms, sumCollectdRhoTime 0.023 ms
+In sumSternheimerTime, sumIniGuessTime 13896.259 ms; sumCOCGTime 1573514.670 ms, composed of sumLhsfunTime 1003047.440 ms, sumSolveMuTime 2972.846 ms, sumMultipleTime 405924.288 ms
+nuChi0Eigscomm 23, rank 0, omega 2, sumOperatorMulTime_nuChi0EigsComm 626.431 s, composed of sumSqrtNuMulVecsTime 257.875 ms, sumSternheimerTime 626173.403 ms, sumCollectdRhoTime 0.010 ms
+In sumSternheimerTime, sumIniGuessTime 3481.278 ms; sumCOCGTime 621615.136 ms, composed of sumLhsfunTime 396508.407 ms, sumSolveMuTime 1153.922 ms, sumMultipleTime 161630.348 ms
+nuChi0Eigscomm 23, rank 0, omega 3, sumOperatorMulTime_nuChi0EigsComm 786.763 s, composed of sumSqrtNuMulVecsTime 266.217 ms, sumSternheimerTime 786496.873 ms, sumCollectdRhoTime 0.012 ms
+In sumSternheimerTime, sumIniGuessTime 3483.436 ms; sumCOCGTime 781930.010 ms, composed of sumLhsfunTime 499288.150 ms, sumSolveMuTime 1453.402 ms, sumMultipleTime 203562.224 ms
+nuChi0Eigscomm 23, rank 0, omega 4, sumOperatorMulTime_nuChi0EigsComm 599.906 s, composed of sumSqrtNuMulVecsTime 177.668 ms, sumSternheimerTime 599727.954 ms, sumCollectdRhoTime 0.005 ms
+In sumSternheimerTime, sumIniGuessTime 2321.039 ms; sumCOCGTime 596684.952 ms, composed of sumLhsfunTime 380731.864 ms, sumSolveMuTime 1105.593 ms, sumMultipleTime 156003.031 ms
+nuChi0Eigscomm 23, rank 0, omega 5, sumOperatorMulTime_nuChi0EigsComm 639.307 s, composed of sumSqrtNuMulVecsTime 181.043 ms, sumSternheimerTime 639126.395 ms, sumCollectdRhoTime 0.006 ms
+In sumSternheimerTime, sumIniGuessTime 2323.268 ms; sumCOCGTime 636081.009 ms, composed of sumLhsfunTime 405896.003 ms, sumSolveMuTime 1208.828 ms, sumMultipleTime 166003.163 ms
+nuChi0Eigscomm 23, rank 0, omega 6, sumOperatorMulTime_nuChi0EigsComm 651.139 s, composed of sumSqrtNuMulVecsTime 180.782 ms, sumSternheimerTime 650958.599 ms, sumCollectdRhoTime 0.011 ms
+In sumSternheimerTime, sumIniGuessTime 2321.451 ms; sumCOCGTime 647912.037 ms, composed of sumLhsfunTime 413178.377 ms, sumSolveMuTime 1239.009 ms, sumMultipleTime 169161.548 ms
+nuChi0Eigscomm 23, rank 0, omega 7, sumOperatorMulTime_nuChi0EigsComm 651.630 s, composed of sumSqrtNuMulVecsTime 179.737 ms, sumSternheimerTime 651449.854 ms, sumCollectdRhoTime 0.005 ms
+In sumSternheimerTime, sumIniGuessTime 2322.983 ms; sumCOCGTime 648403.795 ms, composed of sumLhsfunTime 413176.687 ms, sumSolveMuTime 1249.476 ms, sumMultipleTime 169651.697 ms
+global rank = 23, size_blacscomm = 240, nuChi0 ScaLAPACK topology 0, Dims = (48, 5)
+global rank = 23, 1D topo, my nuChi0 blacs rank = 23, BLCYC size (91125, 40), actual size (91125, 40), DMndspe 91125, mb 91125, myrow 0, nprow 1, nuChi0Neig 9600, nb 40, mycol 23, npcol 240
+global rank = 23, 1D topo, my Permute blacs rank = 23, BLCYC size (9600, 40), nuChi0Neig 9600, mbP 9600, myrow 0, nprow 1, nuChi0Neig 9600, nbP 40, mycol 23, npcol 240
+global rank = 23, 2D topo, my nuChi0 blacs rank = 23, BLCYC size (1898, 1920), actual size (91125, 40), DMndspe 91125, mb 1898, myrow 4, nprow 48, nuChi0Neig 9600, nb 1920, mycol 3, npcol 5
+global rank = 23, Hp topo, mb = 128, mbQ = 128, myrow 4, nprow 48, mycol 3, npcol 5, nr_Hp = 256, nc_Hp = 1920
+global rank = 23, Maximun number of processors for RPA eigenvalue solver is 348
+global rank = 23, The dimension of subgrid for RPA eigen solver is (15 x 15).
+global rank = 23, HpSQ topo 23, mbHpSQ = 9600, myrow 0, nprow 1, mycol 0, npcol 1, nrHpSQ = 9600, ncHpSQ = 9600
+global rank = 23, HpSQ topo 23, myrow 0, nprow 1, mycol 0, npcol 1, nrvk 9600, vkStart 0, vkEnd 9599, nrvk_BLCYC 9600
+nuChi0Eigscomm 23, rank 0, omega 0, sumOperatorMulTime_nuChi0EigsComm 1390.557 s, composed of sumSqrtNuMulVecsTime 2125.158 ms, sumSternheimerTime 1388432.079 ms, sumCollectdRhoTime 0.042 ms
+In sumSternheimerTime, sumIniGuessTime 26085.092 ms; sumCOCGTime 1352828.469 ms, composed of sumLhsfunTime 859358.581 ms, sumSolveMuTime 2451.308 ms, sumMultipleTime 337534.365 ms
+nuChi0Eigscomm 23, rank 0, omega 1, sumOperatorMulTime_nuChi0EigsComm 1772.687 s, composed of sumSqrtNuMulVecsTime 1055.036 ms, sumSternheimerTime 1771632.150 ms, sumCollectdRhoTime 0.022 ms
+In sumSternheimerTime, sumIniGuessTime 13102.334 ms; sumCOCGTime 1753795.481 ms, composed of sumLhsfunTime 1111190.602 ms, sumSolveMuTime 3246.546 ms, sumMultipleTime 457653.249 ms
+nuChi0Eigscomm 23, rank 0, omega 2, sumOperatorMulTime_nuChi0EigsComm 603.574 s, composed of sumSqrtNuMulVecsTime 266.001 ms, sumSternheimerTime 603308.244 ms, sumCollectdRhoTime 0.005 ms
+In sumSternheimerTime, sumIniGuessTime 2917.383 ms; sumCOCGTime 599328.196 ms, composed of sumLhsfunTime 381504.177 ms, sumSolveMuTime 1110.218 ms, sumMultipleTime 156050.274 ms
+nuChi0Eigscomm 23, rank 0, omega 3, sumOperatorMulTime_nuChi0EigsComm 1099.357 s, composed of sumSqrtNuMulVecsTime 397.863 ms, sumSternheimerTime 1098959.156 ms, sumCollectdRhoTime 0.012 ms
+In sumSternheimerTime, sumIniGuessTime 4371.255 ms; sumCOCGTime 1092997.945 ms, composed of sumLhsfunTime 695756.403 ms, sumSolveMuTime 2052.701 ms, sumMultipleTime 285510.227 ms
+nuChi0Eigscomm 23, rank 0, omega 4, sumOperatorMulTime_nuChi0EigsComm 819.681 s, composed of sumSqrtNuMulVecsTime 266.047 ms, sumSternheimerTime 819415.402 ms, sumCollectdRhoTime 0.005 ms
+In sumSternheimerTime, sumIniGuessTime 2912.692 ms; sumCOCGTime 815441.180 ms, composed of sumLhsfunTime 516775.070 ms, sumSolveMuTime 1507.337 ms, sumMultipleTime 215225.728 ms
+nuChi0Eigscomm 23, rank 0, omega 5, sumOperatorMulTime_nuChi0EigsComm 865.383 s, composed of sumSqrtNuMulVecsTime 265.594 ms, sumSternheimerTime 865117.526 ms, sumCollectdRhoTime 0.012 ms
+In sumSternheimerTime, sumIniGuessTime 2915.214 ms; sumCOCGTime 861142.515 ms, composed of sumLhsfunTime 545123.283 ms, sumSolveMuTime 1594.830 ms, sumMultipleTime 227758.847 ms
+nuChi0Eigscomm 23, rank 0, omega 6, sumOperatorMulTime_nuChi0EigsComm 883.850 s, composed of sumSqrtNuMulVecsTime 266.591 ms, sumSternheimerTime 883583.842 ms, sumCollectdRhoTime 0.005 ms
+In sumSternheimerTime, sumIniGuessTime 2917.893 ms; sumCOCGTime 879601.581 ms, composed of sumLhsfunTime 557966.150 ms, sumSolveMuTime 1610.701 ms, sumMultipleTime 231893.756 ms
+nuChi0Eigscomm 23, rank 0, omega 7, sumOperatorMulTime_nuChi0EigsComm 886.757 s, composed of sumSqrtNuMulVecsTime 262.728 ms, sumSternheimerTime 886494.123 ms, sumCollectdRhoTime 0.005 ms
+In sumSternheimerTime, sumIniGuessTime 2942.388 ms; sumCOCGTime 882443.880 ms, composed of sumLhsfunTime 558766.588 ms, sumSolveMuTime 1662.030 ms, sumMultipleTime 233676.001 ms
+global rank = 23, size_blacscomm = 240, nuChi0 ScaLAPACK topology 0, Dims = (48, 5)
+global rank = 23, 1D topo, my nuChi0 blacs rank = 23, BLCYC size (91125, 47), actual size (91125, 47), DMndspe 91125, mb 91125, myrow 0, nprow 1, nuChi0Neig 11200, nb 47, mycol 23, npcol 240
+global rank = 23, 1D topo, my Permute blacs rank = 23, BLCYC size (11200, 47), nuChi0Neig 11200, mbP 11200, myrow 0, nprow 1, nuChi0Neig 11200, nbP 47, mycol 23, npcol 240
+global rank = 23, 2D topo, my nuChi0 blacs rank = 23, BLCYC size (1898, 2240), actual size (91125, 47), DMndspe 91125, mb 1898, myrow 4, nprow 48, nuChi0Neig 11200, nb 2240, mycol 3, npcol 5
+global rank = 23, Hp topo, mb = 128, mbQ = 128, myrow 4, nprow 48, mycol 3, npcol 5, nr_Hp = 256, nc_Hp = 2176
+global rank = 23, Maximun number of processors for RPA eigenvalue solver is 406
+global rank = 23, The dimension of subgrid for RPA eigen solver is (15 x 15).
+global rank = 23, HpSQ topo 23, mbHpSQ = 11200, myrow 0, nprow 1, mycol 0, npcol 1, nrHpSQ = 11200, ncHpSQ = 11200
+global rank = 23, HpSQ topo 23, myrow 0, nprow 1, mycol 0, npcol 1, nrvk 11200, vkStart 0, vkEnd 11199, nrvk_BLCYC 11200
+nuChi0Eigscomm 23, rank 0, omega 0, sumOperatorMulTime_nuChi0EigsComm 1556.056 s, composed of sumSqrtNuMulVecsTime 2325.235 ms, sumSternheimerTime 1553730.504 ms, sumCollectdRhoTime 0.046 ms
+In sumSternheimerTime, sumIniGuessTime 26512.991 ms; sumCOCGTime 1516092.296 ms, composed of sumLhsfunTime 969327.023 ms, sumSolveMuTime 2728.647 ms, sumMultipleTime 375135.996 ms
+nuChi0Eigscomm 23, rank 0, omega 1, sumOperatorMulTime_nuChi0EigsComm 1854.707 s, composed of sumSqrtNuMulVecsTime 1129.133 ms, sumSternheimerTime 1853578.217 ms, sumCollectdRhoTime 0.031 ms
+In sumSternheimerTime, sumIniGuessTime 12633.668 ms; sumCOCGTime 1836001.738 ms, composed of sumLhsfunTime 1175399.440 ms, sumSolveMuTime 3359.668 ms, sumMultipleTime 471072.757 ms
+nuChi0Eigscomm 23, rank 0, omega 2, sumOperatorMulTime_nuChi0EigsComm 702.159 s, composed of sumSqrtNuMulVecsTime 311.973 ms, sumSternheimerTime 701847.132 ms, sumCollectdRhoTime 0.009 ms
+In sumSternheimerTime, sumIniGuessTime 3182.180 ms; sumCOCGTime 697418.243 ms, composed of sumLhsfunTime 446270.160 ms, sumSolveMuTime 1380.368 ms, sumMultipleTime 180464.386 ms
+nuChi0Eigscomm 23, rank 0, omega 3, sumOperatorMulTime_nuChi0EigsComm 1265.282 s, composed of sumSqrtNuMulVecsTime 471.140 ms, sumSternheimerTime 1264810.839 ms, sumCollectdRhoTime 0.012 ms
+In sumSternheimerTime, sumIniGuessTime 4749.008 ms; sumCOCGTime 1257653.565 ms, composed of sumLhsfunTime 805258.183 ms, sumSolveMuTime 2328.651 ms, sumMultipleTime 325619.125 ms
+nuChi0Eigscomm 23, rank 0, omega 4, sumOperatorMulTime_nuChi0EigsComm 938.013 s, composed of sumSqrtNuMulVecsTime 312.002 ms, sumSternheimerTime 937700.590 ms, sumCollectdRhoTime 0.006 ms
+In sumSternheimerTime, sumIniGuessTime 3163.523 ms; sumCOCGTime 933288.000 ms, composed of sumLhsfunTime 599148.986 ms, sumSolveMuTime 1685.562 ms, sumMultipleTime 240457.065 ms
+nuChi0Eigscomm 23, rank 0, omega 5, sumOperatorMulTime_nuChi0EigsComm 988.483 s, composed of sumSqrtNuMulVecsTime 311.718 ms, sumSternheimerTime 988171.298 ms, sumCollectdRhoTime 0.025 ms
+In sumSternheimerTime, sumIniGuessTime 3169.768 ms; sumCOCGTime 983754.819 ms, composed of sumLhsfunTime 631473.950 ms, sumSolveMuTime 1798.254 ms, sumMultipleTime 254070.424 ms
+nuChi0Eigscomm 23, rank 0, omega 6, sumOperatorMulTime_nuChi0EigsComm 1004.064 s, composed of sumSqrtNuMulVecsTime 311.836 ms, sumSternheimerTime 1003751.656 ms, sumCollectdRhoTime 0.006 ms
+In sumSternheimerTime, sumIniGuessTime 3157.571 ms; sumCOCGTime 998718.398 ms, composed of sumLhsfunTime 640582.999 ms, sumSolveMuTime 1821.676 ms, sumMultipleTime 258540.138 ms
+nuChi0Eigscomm 23, rank 0, omega 7, sumOperatorMulTime_nuChi0EigsComm 998.870 s, composed of sumSqrtNuMulVecsTime 311.255 ms, sumSternheimerTime 998558.863 ms, sumCollectdRhoTime 0.010 ms
+In sumSternheimerTime, sumIniGuessTime 3160.513 ms; sumCOCGTime 993751.251 ms, composed of sumLhsfunTime 637194.177 ms, sumSolveMuTime 1829.283 ms, sumMultipleTime 257526.333 ms
