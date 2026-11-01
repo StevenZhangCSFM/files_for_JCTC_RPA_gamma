@@ -1,0 +1,457 @@
+---------------------------------------
+Begin Slurm Prolog: Mar-13-2025 13:53:15
+Job ID:    3210598
+User ID:   bzhang376
+Account:   gts-phanish6-coda20
+Job name:  AbinitLiH
+Partition: cpu-large
+QOS:       inferno
+---------------------------------------
+
+Lmod is automatically replacing "mvapich2/2.3.7-1" with "openmpi/4.1.5".
+
+  ABINIT 9.8.3
+  
+ DeprecationWarning: 
+
+     The files file has been deprecated in Abinit9 and will be removed in Abinit10.
+     Use the syntax `abinit t01.abi` where t01.abi is an input with pseudopotentials e.g.
+
+            pseudos = "al.psp8, as.psp8"
+
+
+  Give name for formatted input file: 
+LiH.in
+  Give name for formatted output file:
+LiH.out
+  Give root name for generic input files:
+abi
+  Give root name for generic output files:
+abo
+  Give root name for generic temporary files:
+tmp
+
+.Version 9.8.3 of ABINIT 
+.(MPI version, prepared for a x86_64_linux_gnu12.3 computer) 
+
+.Copyright (C) 1998-2022 ABINIT group . 
+ ABINIT comes with ABSOLUTELY NO WARRANTY.
+ It is free software, and you are welcome to redistribute it
+ under certain conditions (GNU General Public License,
+ see ~abinit/COPYING or http://www.gnu.org/copyleft/gpl.txt).
+
+ ABINIT is a project of the Universite Catholique de Louvain,
+ Corning Inc. and other collaborators, see ~abinit/doc/developers/contributors.txt .
+ Please read https://docs.abinit.org/theory/acknowledgments for suggested
+ acknowledgments of the ABINIT effort.
+ For more information, see https://www.abinit.org .
+
+.Starting date : Thu 13 Mar 2025.
+- ( at 13h53 )
+  
+
+ ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ === Build Information === 
+  Version       : 9.8.3
+  Build target  : x86_64_linux_gnu12.3
+  Build date    : 20240319
+
+ === Compiler Suite === 
+  C compiler       : gnu12.3
+  C++ compiler     : gnu12.3
+  Fortran compiler : gnu12.3
+  CFLAGS           : -g -O2
+  CXXFLAGS         : -g -O2
+  FCFLAGS          : -g -ffree-line-length-none     -I/usr/local/pace-apps/spack/package ...
+  FC_LDFLAGS       : 
+
+ === Optimizations === 
+  Debug level        : basic
+  Optimization level : standard
+  Architecture       : intel_xeon
+
+ === Multicore === 
+  Parallel build : yes
+  Parallel I/O   : 
+  openMP support : no
+  GPU support    : 
+
+ === Connectors / Fallbacks === 
+  LINALG flavor  : openblas
+  FFT flavor     : fftw3
+  HDF5           : yes
+  NetCDF         : yes
+  NetCDF Fortran : yes
+  LibXC          : yes
+  Wannier90      : no
+
+ === Experimental features === 
+  Exports             : 
+  GW double-precision : 
+
+ ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+ ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ Default optimizations:
+   -O2
+
+
+ Optimizations for 43_ptgroups:
+   -O0
+
+
+ ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+ ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ CPP options activated during the build:
+
+                    CC_GNU                   CXX_GNU                    FC_GNU
+ 
+              HAVE_ATOMPAW HAVE_FC_ALLOCATABLE_DT...             HAVE_FC_ASYNC
+ 
+         HAVE_FC_BACKTRACE  HAVE_FC_COMMAND_ARGUMENT      HAVE_FC_COMMAND_LINE
+ 
+        HAVE_FC_CONTIGUOUS           HAVE_FC_CPUTIME              HAVE_FC_EXIT
+ 
+             HAVE_FC_FLUSH             HAVE_FC_GAMMA            HAVE_FC_GETENV
+ 
+   HAVE_FC_IEEE_ARITHMETIC   HAVE_FC_IEEE_EXCEPTIONS          HAVE_FC_INT_QUAD
+ 
+             HAVE_FC_IOMSG     HAVE_FC_ISO_C_BINDING  HAVE_FC_ISO_FORTRAN_2008
+ 
+        HAVE_FC_LONG_LINES        HAVE_FC_MOVE_ALLOC  HAVE_FC_ON_THE_FLY_SHAPE
+ 
+           HAVE_FC_PRIVATE         HAVE_FC_PROTECTED           HAVE_FC_SHIFTLR
+ 
+         HAVE_FC_STREAM_IO            HAVE_FC_SYSTEM                HAVE_FFTW3
+ 
+          HAVE_FORTRAN2003                 HAVE_HDF5        HAVE_LIBPAW_ABINIT
+ 
+      HAVE_LIBTETRA_ABINIT                HAVE_LIBXC         HAVE_LINALG_AXPBY
+ 
+        HAVE_LINALG_GEMM3M         HAVE_LINALG_GEMMT HAVE_LINALG_OPENBLAS_T...
+ 
+                  HAVE_MPI                 HAVE_MPI2       HAVE_MPI_IALLGATHER
+ 
+       HAVE_MPI_IALLREDUCE        HAVE_MPI_IALLTOALL       HAVE_MPI_IALLTOALLV
+ 
+           HAVE_MPI_IBCAST         HAVE_MPI_IGATHERV        HAVE_MPI_INTEGER16
+ 
+               HAVE_MPI_IO HAVE_MPI_TYPE_CREATE_S...               HAVE_NETCDF
+ 
+       HAVE_NETCDF_FORTRAN             HAVE_OS_LINUX         HAVE_TIMER_ABINIT
+ 
+ ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+- input  file    -> LiH.in
+- output file    -> LiH.out
+- root for input  files -> abi
+- root for output files -> abo
+
+-instrng: 46 lines of input have been read from file LiH.in
+
+
+ Please give name of formatted atomic psp file (and finish with a newline character)
+ For atom type 1, psp file is ../../01_H_1_1.0_1.0_pbe_v1.0.psp8
+
+ Please give name of formatted atomic psp file (and finish with a newline character)
+ For atom type 2, psp file is ../../03_Li_3_1.6_1.6_pbe_v1.0.psp8
+  read the values zionpsp=  1.0 , pspcod=   8 , lmax=   1
+  read the values zionpsp=  3.0 , pspcod=   8 , lmax=   1
+
+ inpspheads: deduce mpsang = 2, n1xccc = 0.
+
+======================================================= 
+ invars1m : enter jdtset= 0
+
+ symlatt: the Bravais lattice is cP (primitive cubic)
+  xcart  is defined in input file (possibly in Angstrom)
+ ingeo: takes atomic coordinates from input array xcart
+
+ symlatt: the Bravais lattice is cP (primitive cubic)
+
+ symlatt: the Bravais lattice is cP (primitive cubic)
+
+--- !COMMENT
+src_file: m_symfind.F90
+src_line: 997
+message: |
+    The Bravais lattice determined only from the primitive
+    vectors, bravais(1)=  7, is more symmetric
+    than the real one, iholohedry=  1, obtained by taking into
+    account the atomic positions. Start deforming the primitive vector set.
+...
+
+
+ symlatt: the Bravais lattice is mC (one-face-centered monoclinic)
+
+--- !COMMENT
+src_file: m_symfind.F90
+src_line: 1006
+message: |
+    The Bravais lattice determined from modified primitive
+    vectors, bravais(1)=  2, has a lower symmetry than before,
+    but is still more symmetric than the real one, iholohedry=  1
+    obtained by taking into account the atomic positions.
+...
+
+
+ symlatt: the Bravais lattice is aP (primitive triclinic)
+ symspgr: spgroup=   1  P1   (=C1^1)
+ For input ecut=  7.500000E+01 best grid ngfft=      60      60      60
+       max ecut=  7.706498E+01
+
+ ==== FFT mesh ====
+  FFT mesh divisions ........................    60   60   60
+  Augmented FFT divisions ...................    61   61   60
+  FFT algorithm .............................   312
+  FFT cache size ............................    16
+ getmpw: optimal value of mpw= 6759
+
+ Symmetries : space group P1 (#  1); Bravais aP (primitive triclinic)
+
+ getdim_nloc : deduce lmnmax  =   8, lnmax  =   4,
+                      lmnmaxso=   8, lnmaxso=   4.
+memory: analysis of memory needs
+================================================================================
+ Values of the parameters that define the memory need of the present run
+     intxc =       0    ionmov =       0      iscf =      -2    lmnmax =       4
+     lnmax =       4     mgfft =      60  mpssoang =       2    mqgrid =    3001
+     natom =       8  nloc_mem =       1    nspden =       1   nspinor =       1
+    nsppol =       1      nsym =       1    n1xccc =       0    ntypat =       2
+    occopt =       1   xclevel =       2
+-    mband =        8923        mffmem =           1         mkmem =           1
+       mpw =        6759          nfft =      216000          nkpt =           1
+================================================================================
+P This job should need less than                    2783.721 Mbytes of memory.
+  Rough estimation (10% accuracy) of disk space for files :
+_ WF disk file :    920.268 Mbytes ; DEN or POT disk file :      1.650 Mbytes.
+================================================================================
+
+ Biggest array : cg(disk), with    920.2681 MBytes.
+ memana : allocated an array of    920.268 Mbytes, for testing purposes.
+ memana: allocated    2783.721Mbytes, for testing purposes. 
+ The job will continue.
+--------------------------------------------------------------------------------
+------------- Echo of variables that govern the present computation ------------
+--------------------------------------------------------------------------------
+-
+- outvars: echo of selected default values                                      
+-   iomode0 =  0 , fftalg0 =312 , wfoptalg0 =  0
+-
+- outvars: echo of global parameters not present in the input file              
+-  max_nthreads =    0
+-
+ -outvars: echo values of preprocessed input variables --------
+ 
+ These variables are accessible in NetCDF format (abo_OUT.nc)
+
+            acell      7.5915000000E+00  7.5915000000E+00  7.5915000000E+00 Bohr
+              amu      1.00794000E+00  6.94100000E+00
+             ecut      7.50000000E+01 Hartree
+           ecutsm      5.00000000E-01 Hartree
+-          fftalg         312
+             iscf          -2
+           istwfk        2
+              ixc          11
+         kptrlatt        1    0    0      0    1    0      0    0    1
+          kptrlen      7.59150000E+00
+P           mkmem           1
+            natom           8
+            nband        8923
+           nbdbuf         893
+            ngfft          60      60      60
+             nkpt           1
+             nsym           1
+           ntypat           2
+          spgroup           1
+           tolwfr      1.00000000E-05
+            typat      1  1  1  1  2  2  2  2
+           xangst      1.6654265109E-01  7.0036603557E-02  2.2506965036E+00
+                       2.1473481947E-01  1.7956146877E+00  2.4599860896E-01
+                       1.8112307072E+00 -1.1722333525E-01 -1.8121673508E-01
+                       2.2273703722E+00  2.0334216335E+00  2.2576393086E+00
+                       2.4191865268E-01 -4.1397533028E-02  8.2435225554E-02
+                      -7.7154037012E-03  2.2286192304E+00  1.7629485786E+00
+                       2.1675098464E+00  1.5462558035E-01  2.1933760283E+00
+                       1.8190995722E+00  2.2517760251E+00  2.2963644967E-01
+            xcart      3.1472000000E-01  1.3235000000E-01  4.2532000000E+00
+                       4.0579000000E-01  3.3932200000E+00  4.6487000000E-01
+                       3.4227300000E+00 -2.2152000000E-01 -3.4245000000E-01
+                       4.2091200000E+00  3.8426100000E+00  4.2663200000E+00
+                       4.5716000000E-01 -7.8230000000E-02  1.5578000000E-01
+                      -1.4580000000E-02  4.2114800000E+00  3.3314900000E+00
+                       4.0960000000E+00  2.9220000000E-01  4.1448800000E+00
+                       3.4376000000E+00  4.2552400000E+00  4.3395000000E-01
+             xred      4.1456892577E-02  1.7433972206E-02  5.6025818349E-01
+                       5.3453204242E-02  4.4697622341E-01  6.1235592439E-02
+                       4.5086346572E-01 -2.9180003952E-02 -4.5109662122E-02
+                       5.5445168939E-01  5.0617269314E-01  5.6198643219E-01
+                       6.0219982876E-02 -1.0304946322E-02  2.0520318778E-02
+                      -1.9205690575E-03  5.5476256339E-01  4.3884476059E-01
+                       5.3955081341E-01  3.8490416914E-02  5.4598959362E-01
+                       4.5282223539E-01  5.6052690509E-01  5.7162616084E-02
+            znucl        1.00000    3.00000
+
+================================================================================
+
+ chkinp: Checking input parameters for consistency.
+ DATA TYPE INFORMATION: 
+ REAL:      Data type name: REAL(DP) 
+            Kind value:      8
+            Precision:      15
+            Smallest nonnegligible quantity relative to 1: 0.22204460E-015
+            Smallest positive number:                      0.22250739E-307
+            Largest representable number:                  0.17976931E+309
+ INTEGER:   Data type name: INTEGER(default) 
+            Kind value: 4
+            Bit size:   32
+            Largest representable number: 2147483647
+ LOGICAL:   Data type name: LOGICAL 
+            Kind value: 4
+ CHARACTER: Data type name: CHARACTER             Kind value: 1
+
+  ==== OpenMP parallelism is OFF ====
+ 
+  ==== Using MPI-2 specifications ==== 
+  MPI-IO support is ON
+  xmpi_tag_ub ................      8388607
+  xmpi_bsize_ch ..............            1
+  xmpi_bsize_int .............            4
+  xmpi_bsize_sp ..............            4
+  xmpi_bsize_dp ..............            8
+  xmpi_bsize_spc .............            8
+  xmpi_bsize_dpc .............           16
+  xmpio_bsize_frm ............            4
+  xmpi_address_kind ..........            8
+  xmpi_offset_kind ...........            8
+  MPI_WTICK ..................    1.0000000000000001E-009
+
+================================================================================
+== DATASET  1 ==================================================================
+-   mpi_nproc: 1, omp_nthreads: -1 (-1 if OMP is not activated)
+
+
+--- !COMMENT
+src_file: m_xgScalapack.F90
+src_line: 235
+message: |
+    xgScalapack in auto mode
+...
+
+
+ getdim_nloc : deduce lmnmax  =   8, lnmax  =   4,
+                      lmnmaxso=   8, lnmaxso=   4.
+ Exchange-correlation functional for the present dataset will be:
+  GGA: Perdew-Burke-Ernzerhof functional - ixc=11
+ Citation for XC functional:
+  J.P.Perdew, K.Burke, M.Ernzerhof, PRL 77, 3865 (1996)
+
+ Unit cell volume ucvol=  4.3750477E+02 bohr^3
+ Angles (23,13,12)=  9.00000000E+01  9.00000000E+01  9.00000000E+01 degrees
+
+ getcut: wavevector=  0.0000  0.0000  0.0000  ngfft=  60  60  60
+         ecut(hartree)=     75.000   => boxcut(ratio)=   2.02735
+- pspini: atom type   1  psp file is ../../01_H_1_1.0_1.0_pbe_v1.0.psp8
+- pspatm: opening atomic psp file    ../../01_H_1_1.0_1.0_pbe_v1.0.psp8
+- H     ONCVPSP-4.0.1  r_core=   1.03328   1.00283
+-  1.00000   1.00000    220318                znucl, zion, pspdat
+    8   11    1    4       300   0.00000      pspcod,pspxc,lmax,lloc,mmax,r2well
+    2.99000000000000    0.00000000000000    0.00000000000000   rchrg,fchrg,qchrg
+     nproj     2     1
+     extension_switch     1
+  valence charge integrates to:   0.90326532217709599     
+  pspatm : epsatm=    0.22937515
+         --- l  ekb(1:nproj) -->
+             0   -1.200832   -0.345208
+             1   -0.125325
+ pspatm: atomic psp has been read  and splines computed
+
+- pspini: atom type   2  psp file is ../../03_Li_3_1.6_1.6_pbe_v1.0.psp8
+- pspatm: opening atomic psp file    ../../03_Li_3_1.6_1.6_pbe_v1.0.psp8
+- Li    ONCVPSP-4.0.1  r_core=   1.62803   1.60867
+-  3.00000   3.00000    220318                znucl, zion, pspdat
+    8   11    1    4       400   0.00000      pspcod,pspxc,lmax,lloc,mmax,r2well
+    3.99000000000000    0.00000000000000    0.00000000000000   rchrg,fchrg,qchrg
+     nproj     2     2
+     extension_switch     1
+  valence charge integrates to:    2.5832716485837097     
+  pspatm : epsatm=    1.62490947
+         --- l  ekb(1:nproj) -->
+             0   -2.406866   -1.225650
+             1   -3.074947   -1.129715
+ pspatm: atomic psp has been read  and splines computed
+
+   1.18674215E+02                                ecore*ucvol(ha*bohr**3)
+ ==== Info on pseudopotentials ====
+  Norm-conserving pseudopotentials
+  Number of pseudopotentials ..    2
+  Number of types of atoms   ..    2
+  Scalar calculation (no spin-orbit term)
+  Nonlocal part applied using Legendre polynomials
+  Max number of non-local projectors over l and type   2
+  Highest angular momentum +1 .......   2
+  Max number of (l,n)   components ..   4
+  Max number of (l,m,n) components ..   4
+
+ Info on the Q-grid used for form factors in spline form: 
+   Number of q-points for radial functions ffspl ..   3001
+   Number of q-points for vlspl ...................   3001
+   vloc is computed in Reciprocal Space
+   model core charge treated in real-space
+
+  XC functional for type 1 is 11
+  Pseudo valence available: yes
+  XC functional for type 2 is 11
+  Pseudo valence available: yes
+
+
+--- !ERROR
+src_file: m_gstate.F90
+src_line: 592
+mpi_rank: 0
+message: |
+    Number of bands nband= 8923 > number of planewaves npw= 6759
+    The number of eigenvectors cannot be greater that the size of the Hamiltonian!
+    Action: decrease nband or, alternatively, increase ecut
+...
+
+
+--- !ERROR
+src_file: m_gstate.F90
+src_line: 592
+mpi_rank: 0
+message: |
+    Number of bands nband= 8923 > number of planewaves npw= 6759
+    The number of eigenvectors cannot be greater that the size of the Hamiltonian!
+    Action: decrease nband or, alternatively, increase ecut
+...
+
+
+ abinit_abort: decision taken to exit. Check above messages for more info
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 0 in communicator MPI_COMM_WORLD
+with errorcode 14.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** STEP 3210598.0 ON atl1-1-03-004-11-2 CANCELLED AT 2025-03-13T13:53:21 ***
+srun: error: atl1-1-03-004-11-2: task 0: Exited with exit code 14
+---------------------------------------
+Begin Slurm Epilog: Mar-13-2025 13:53:21
+Job ID:        3210598
+User ID:       bzhang376
+Account:       gts-phanish6-coda20
+Job name:      AbinitLiH
+Resources:     cpu=1,mem=40G,node=1
+Rsrc Used:     cput=00:00:06,vmem=0,walltime=00:00:06,mem=9420K,energy_used=0
+Partition:     cpu-large
+QOS:           inferno
+Nodes:         atl1-1-03-004-11-2
+---------------------------------------
